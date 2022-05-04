@@ -150,6 +150,12 @@ export const mergeTwoJson = (issues, solved) => {
       "last_month.Login Issue": loginIssueLastMonth,
       "last_week.Login Issue": loginIssuesLastWeek,
       "last_day.Login Issue": loginIssuesLastDay,
+      "last_month.Carrier Invoice Errors: Open": invoiceIssueLastMonth,
+      "last_month.Carrier Invoice Errors: Resolved": invoiceResolvedLastMonth,
+      "last_week.Carrier Invoice Errors: Open": invoiceIssuesLastWeek,
+      "last_week.Carrier Invoice Errors: Resolved": invoiceResolvedLastWeek,
+      "last_day.Carrier Invoice Errors: Open": invoiceIssuesLastDay,
+      "last_day.Carrier Invoice Errors: Resolved": invoiceResolvedLastDay,
       "last_month.Subaccount Status Updates: Open": subAccountIssueLastMonth,
       "last_month.Subaccount Status Updates: Resolved":
         subAccountResolvedLastMonth,
@@ -165,12 +171,6 @@ export const mergeTwoJson = (issues, solved) => {
       "last_week.Subaccount Autopay Updates: Resolved": autopayResolvedLastWeek,
       "last_day.Subaccount Autopay Updates: Open": autopayIssuesLastDay,
       "last_day.Subaccount Autopay Updates: Resolved": autopayResolvedLastDay,
-      "last_month.Carrier Invoice Errors: Open": invoiceIssueLastMonth,
-      "last_month.Carrier Invoice Errors: Resolved": invoiceResolvedLastMonth,
-      "last_week.Carrier Invoice Errors: Open": invoiceIssuesLastWeek,
-      "last_week.Carrier Invoice Errors: Resolved": invoiceResolvedLastWeek,
-      "last_day.Carrier Invoice Errors: Open": invoiceIssuesLastDay,
-      "last_day.Carrier Invoice Errors: Resolved": invoiceResolvedLastDay,
     };
   }
   return Array.from(db.keys()).map((key) => {
